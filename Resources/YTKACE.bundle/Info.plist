@@ -7,12 +7,12 @@
     <key>CFBundleIdentifier</key>
     <string>com.epic.ytkace.assets</string>
     <key>CFBundleName</key>
-    <string>YTKACE</string>
+    <string>YTste</string>
     <key>CFBundlePackageType</key>
     <string>BNDL</string>
     <key>CFBundleShortVersionString</key>
     <string>0.8.3</string>
     <key>CFBundleVersion</key>
-	<string>90</string>
+    <string>90</string>
 </dict>
 </plist>
