@@ -66,7 +66,7 @@ static id YTKACEMakePivotItem(void) {
             rendererClass,
             factory,
             YTKACEPivotIdentifier,
-            @"YTKACE",
+            @"KvaraYT",
             77
         );
         id item = YTKACEValue(renderer, @"pivotBarItemRenderer");
@@ -96,7 +96,7 @@ static id YTKACEMakePivotItem(void) {
     id title = ((id (*)(id, SEL, id))objc_msgSend)(
         formattedClass,
         formattedSelector,
-        @"YTKACE"
+        @"KvaraYT"
     );
     YTKACESetValue(itemRenderer, @"setTitle:", title);
 
@@ -929,7 +929,7 @@ static void YTKACEApplyDownloadIcon(UIView *view) {
     NSString *token = YTKACETabToken(view);
     NSString *text = nativeLabel.text ?: @"";
     BOOL exactIdentifier = [token isEqualToString:@"feytkace"];
-    BOOL exactLabel = [text caseInsensitiveCompare:@"YTKACE"] == NSOrderedSame;
+    BOOL exactLabel = [text caseInsensitiveCompare:@"KvaraYT"] == NSOrderedSame;
     BOOL associated = [objc_getAssociatedObject(
         view,
         YTKACETabAssociation
@@ -960,7 +960,7 @@ static void YTKACEApplyDownloadIcon(UIView *view) {
     if (label == nil) {
         label = [[UILabel alloc] initWithFrame:CGRectZero];
         label.tag = 0x59414347;
-        label.text = @"YTKACE";
+        label.text = @"KvaraYT";
         label.font = nativeLabel.font ?: [UIFont systemFontOfSize:10.0];
         label.textAlignment = NSTextAlignmentCenter;
         label.autoresizingMask = UIViewAutoresizingFlexibleWidth |
